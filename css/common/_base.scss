@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: $background-color-body;
+        color: #ffffff;
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 100px 0;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

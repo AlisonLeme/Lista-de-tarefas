@@ -1,0 +1,60 @@
+.section {
+    width: 100%;
+
+    .task {
+        position: relative;
+        background-color: $section-color;
+        display: flex;
+        padding: 20px 0 20px 30px;
+        border-top: 1px solid $footer-color;
+        transition: background-color 300ms ease;
+
+        &.removed {
+            animation: removeTask 300ms ease;
+        }
+
+        &.hidden {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $section-color-hover;
+        }
+
+        &:hover .btn-delete {
+            opacity: 100%;
+        }
+
+        .check {
+            position: relative;
+            background-color: $check-button;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 15px;
+            cursor: pointer;
+            transition: background-color 300ms ease;
+    
+            &:hover, &.done {
+                background-color: $footer-color;
+            }
+
+            &.done::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left:50%;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                margin-left: -6px;
+                margin-top: -6px;
+                background-color: $check-button;
+            }
+
+            &.done + span {
+                text-decoration: line-through;
+            }
+        }
+    }
+}

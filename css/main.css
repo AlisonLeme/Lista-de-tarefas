@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+* body .container {
+  max-width: 800px;
+  width: 90%;
+  padding: 100px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+* body .container {
+  max-width: 800px;
+  width: 90%;
+  padding: 100px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  background-color: #732222;
+  width: 100%;
+  padding: 15px 0 15px 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.section {
+  width: 100%;
+}
+
+.section .task {
+  position: relative;
+  background-color: #15AEBF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 20px 30px;
+  border-top: 1px solid #106973;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+}
+
+.section .task.removed {
+  -webkit-animation: removeTask 300ms ease;
+          animation: removeTask 300ms ease;
+}
+
+.section .task.hidden {
+  display: none;
+}
+
+.section .task:hover {
+  background-color: #11BFBF;
+}
+
+.section .task:hover .btn-delete {
+  opacity: 100%;
+}
+
+.section .task .check {
+  position: relative;
+  background-color: #75e2e2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+}
+
+.section .task .check:hover, .section .task .check.done {
+  background-color: #106973;
+}
+
+.section .task .check.done::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background-color: #75e2e2;
+}
+
+.section .task .check.done + span {
+  text-decoration: line-through;
+}
+
+.footer {
+  width: 100%;
+}
+
+.input-task {
+  background-color: #106973;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px 0 20px 30px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  background-color: #D92211;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.btn-delete::after {
+  content: 'x';
+  color: #ffffff;
+}
+
+@-webkit-keyframes removeTask {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+}
+
+@keyframes removeTask {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

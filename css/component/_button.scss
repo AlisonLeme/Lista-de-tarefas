@@ -1,0 +1,20 @@
+.btn-delete {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background-color: $close-button;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 300ms ease;
+
+    &::after {
+        content: 'x';
+        color: #ffffff;
+    }
+}
