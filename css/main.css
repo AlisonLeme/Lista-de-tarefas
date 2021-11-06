@@ -119,11 +119,11 @@
   transition: background-color 300ms ease;
 }
 
-.section .task .check:hover, .section .task .check.done {
+.section .task .check:hover, .section .task .check[data-done=true] {
   background-color: #106973;
 }
 
-.section .task .check.done::after {
+.section .task .check[data-done=true]::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -136,7 +136,7 @@
   background-color: #75e2e2;
 }
 
-.section .task .check.done + span {
+.section .task .check[data-done=true] + span {
   text-decoration: line-through;
 }
 

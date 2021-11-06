@@ -35,11 +35,11 @@
             cursor: pointer;
             transition: background-color 300ms ease;
     
-            &:hover, &.done {
+            &:hover, &[data-done=true] {
                 background-color: $footer-color;
             }
 
-            &.done::after {
+            &[data-done=true]::after{
                 content: '';
                 position: absolute;
                 top: 50%;
@@ -52,7 +52,7 @@
                 background-color: $check-button;
             }
 
-            &.done + span {
+            &[data-done=true] + span {
                 text-decoration: line-through;
             }
         }
